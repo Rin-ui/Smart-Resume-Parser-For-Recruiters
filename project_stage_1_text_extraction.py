@@ -1,10 +1,10 @@
-step 1: Text extraction + hard coded or manually created resume folder with resume 1,2,3 to check working
-resumes/
- ├── resume1.txt
- ├── resume2.txt
- ├── resume3.txt
+# step 1: Text extraction + hard coded or manually created resume folder with resume 1,2,3 to check working
+# resumes/
+# ├── resume1.txt
+# ├── resume2.txt
+# ├── resume3.txt
 
- text extraction part : 
+ # text extraction part : 
  import pdfplumber
 from docx import Document    (pip install python-docx)
 
@@ -19,7 +19,8 @@ def extract_text(file):
 
 
 
-This is the function...... now we'll use the function to extract code
+# This is the function...... now we'll use the function to extract code
+
 import pdfplumber
 from docx import Document
 
@@ -46,4 +47,4 @@ for file in os.listdir(folder):
     text = extract_text(path)
     
     print("Extracted Text Preview:\n")
-    print(text[:])  # first 300 characters
+    print(text[:])  # to extract entire content 
